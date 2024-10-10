@@ -1,0 +1,95 @@
+.content-align {
+  padding: 20px;
+}
+
+.job-entry-title {
+  margin-bottom: 5px;
+}
+
+.job-entry-sub-title {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.custom-color-sub-title {
+  color: orange;
+  font-weight: 500;
+}
+
+.job-entry-card {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job-entry-fields-custom-align {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 15px 0;
+}
+
+.job-entry-custom-input-design {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+.job-entry-custom-medium-input-design {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+.btn-align {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.save-primary-btn,
+.discard-primary-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.save-primary-btn:hover {
+  background-color: #333;
+}
+
+.discard-primary-btn {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.discard-primary-btn:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .job-entry-fields-custom-align {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .save-primary-btn,
+  .discard-primary-btn {
+    width: 100%;
+  }
+}
